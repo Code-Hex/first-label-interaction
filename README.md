@@ -1,5 +1,7 @@
 # First Label Interaction
 
+![Test Issue Label](https://github.com/Code-Hex/first-label-interaction/workflows/Test%20Issue%20Label/badge.svg)
+
 An action for labeling pull requests or issues from first-time contributors.
 
 Most of the code is refered to https://github.com/actions/first-interaction.
