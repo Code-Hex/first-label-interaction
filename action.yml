@@ -1,0 +1,17 @@
+name: 'First label interaction'
+description: 'Set labels when new contributor create their first issue or open their first pull request'
+author: 'Code-Hex'
+branding:
+  icon: tag
+  color: blue
+inputs:
+  github-token:
+    description: 'Token for the repository. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true
+  issue-labels:
+    description: 'Labels to post on an individual''s first issue'
+  pr-labels:
+    description: 'Labels to post on an individual''s first pull request'
+runs:
+  using: 'node12'
+  main: 'lib/main.js'

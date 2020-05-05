@@ -1,0 +1,16 @@
+name: "Test Issue Label"
+on: [issues, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: yarn install
+      - name: test
+        uses: ./
+        with:
+          issue-labels: '["good first issue", "help wanted"]'
+          pr-labels: '["help wanted"]'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
