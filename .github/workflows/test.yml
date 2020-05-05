@@ -1,5 +1,5 @@
 name: "Test Issue Label"
-on: [issues]
+on: [issues, pull_request]
 
 jobs:
   test:
