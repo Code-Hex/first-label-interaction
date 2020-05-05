@@ -13,5 +13,5 @@ inputs:
   pr-labels:
     description: 'Labels to post on an individual''s first pull request'
 runs:
-  using: 'node12'
-  main: 'lib/main.js'
+  using: 'docker'
+  image: 'Dockerfile'
