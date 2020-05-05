@@ -2,6 +2,8 @@
 
 An action for labeling pull requests or issues from first-time contributors.
 
+Most of the code is refered to https://github.com/actions/first-interaction.
+
 # Usage
 
 See [action.yml](action.yml)
