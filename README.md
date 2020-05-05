@@ -4,6 +4,8 @@
 
 An action for labeling pull requests or issues from first-time contributors.
 
+You can see the example: https://github.com/Code-Hex/first-label-interaction/issues/2
+
 Most of the code is refered to https://github.com/actions/first-interaction.
 
 # Usage
