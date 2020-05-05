@@ -5,7 +5,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: yarn install
+      - name: test
+        uses: ./
         with:
           issue-labels: '["good first issue", "help wanted"]'
           pr-labels: '["help wanted"]'
