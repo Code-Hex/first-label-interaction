@@ -60,7 +60,6 @@ async function run() {
       return;
     }
 
-    // Do nothing if no message set for this type of contribution
     const labels: string[] = JSON.parse(isIssue ? issueLabels : prLabels);
     console.log(labels);
 
