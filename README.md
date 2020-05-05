@@ -12,7 +12,7 @@ See [action.yml](action.yml)
 
 ```yaml
 steps:
-- uses: Code-Hex/first-label-interaction@v1
+- uses: Code-Hex/first-label-interaction@v1.0.1
   with:
     repo-token: ${{ secrets.GITHUB_TOKEN }}
     issue-labels: '["good first issue", "help wanted"]'
