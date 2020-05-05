@@ -14,7 +14,7 @@ See [action.yml](action.yml)
 steps:
 - uses: Code-Hex/first-label-interaction@v1.0.1
   with:
-    repo-token: ${{ secrets.GITHUB_TOKEN }}
+    github-token: ${{ secrets.GITHUB_TOKEN }}
     issue-labels: '["good first issue", "help wanted"]'
     pr-labels: '["help wanted"]'
 ```
