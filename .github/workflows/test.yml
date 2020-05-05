@@ -1,0 +1,12 @@
+name: "Test Issue Label"
+on: [issues]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          issue-labels: '["good first issue", "help wanted"]'
+          pr-labels: '["help wanted"]'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
