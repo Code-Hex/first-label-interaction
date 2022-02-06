@@ -72,7 +72,7 @@ async function run() {
       issue_number: issue.number,
       labels: labels
     });
-  } catch (error) {
+  } catch (error: any) {
     core.setFailed(error.message);
     return;
   }
