@@ -1,10 +1,10 @@
-import * as core from '@actions/core';
+import {getInput, setFailed} from '@actions/core';
 import * as github from '@actions/github';
 
 async function run() {
   try {
-    const issueLabels: string = core.getInput('issue-labels');
-    const prLabels: string = core.getInput('pr-labels');
+    const issueLabels: string = getInput('issue-labels');
+    const prLabels: string = getInput('pr-labels');
     if (!issueLabels && !prLabels) {
       throw new Error(
         'Action must have at least one of issue-labels or pr-labels set'
@@ -12,7 +12,7 @@ async function run() {
     }
     // Get client and context
     const client: github.GitHub = new github.GitHub(
-      core.getInput('github-token', {required: true})
+      getInput('github-token', {required: true})
     );
     const context = github.context;
 
@@ -72,9 +72,11 @@ async function run() {
       issue_number: issue.number,
       labels: labels
     });
-  } catch (error: any) {
-    core.setFailed(error.message);
-    return;
+  } catch (error) {
+    if (error instanceof Error) {
+      setFailed(error);
+      return;
+    }
   }
 }
 
