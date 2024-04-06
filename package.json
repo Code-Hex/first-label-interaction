@@ -5,8 +5,7 @@
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write **/*.ts",
-    "test": "jest"
+    "format": "prettier --write **/*.ts"
   },
   "repository": {
     "type": "git",
@@ -27,7 +26,7 @@
   },
   "homepage": "https://github.com/Code-Hex/first-label-interaction#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "1.9.1",
     "@actions/exec": "1.0.4",
     "@actions/github": "^2.1.1",
     "@actions/io": "^1.0.2",
@@ -36,7 +35,7 @@
   "devDependencies": {
     "@types/node": "^12.0.4",
     "prettier": "^1.17.1",
-    "typescript": "^4.5.5",
+    "typescript": "^5.4.4",
     "yarn-audit-fix": "^9.0.10"
   }
 }
