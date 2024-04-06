@@ -1,6 +1,6 @@
 {
   "name": "first-label-interaction-action",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An action for labeling first time contributors.",
   "main": "lib/main.js",
   "scripts": {
